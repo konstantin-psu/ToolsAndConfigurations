@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/Users/konstantin/repos/masterpuppet/puppet/modules/apps/manifests/capture/scripts'
+let g:netrw_dirhist_2='/Users/konstantin/repos/masterpuppet/puppet/modules/apps/manifests/a2'
+let g:netrw_dirhist_3='/Users/konstantin/.vim/bundle/jedi-vim/test'
+let g:netrw_dirhist_4='/Users/konstantin/.ansible/playbooks'
+let g:netrw_dirhist_5='/Users/konstantin/.vim'
+let g:netrw_dirhist_6='/Users/konstantin'
+let g:netrw_dirhist_7='/Users/konstantin/psu/PSU_Homeworks/cs321/hw3/ast'

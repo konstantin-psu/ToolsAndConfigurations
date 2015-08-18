@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/smmProject/SMM-MPI/NPB3.3.1/NPB3.3-MPI/config/NAS.samples'
+let g:netrw_dirhist_2='/home/konstan2/mpitest'
+let g:netrw_dirhist_3='/smmProject/utilities'
