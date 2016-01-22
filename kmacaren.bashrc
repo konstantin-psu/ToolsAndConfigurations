@@ -80,7 +80,7 @@ export LSCOLORS='ExGxFxdxCxDxDxBxBxExEx'
     #export PS1=$PS1"\W "					# orange, pwd
     #nextChar='='
     # alt '
-    #nextChar=§
+    #nextChar=ï¿½
     #if [ "$TERM" = "linux" ]; then
     #	nextColor="\[$Bold\]\[$Color3\]"
     #else
@@ -89,16 +89,16 @@ export LSCOLORS='ExGxFxdxCxDxDxBxBxExEx'
     #export PS1=$PS1"\[$Color3\]$nextChar\[$Color_OFF\]"			# yellow
 
     # alt shift 4
-    #nextChar=¤
+    #nextChar=ï¿½
     #export PS1=$PS1"\[$Color2\]$nextChar"	# green
 
     # alt 6
-    #nextChar=¶
+    #nextChar=ï¿½
     nextChar='>'
     export PS1=$PS1"\[$Color14\]$nextChar"			# cyan
-    #nextChar=÷ # altw
+    #nextChar=ï¿½ # altw
     #export PS1=$PS1"\[$Color_OFF\]\[$Color4\]$nextChar"		# blue
-    #nextChar=» # alt ;
+    #nextChar=ï¿½ # alt ;
     #export PS1=$PS1"\[$Color5\]$nextChar\[$Color_OFF\] "	# indigo/poipleis
     #export PS1=$PS1"\[$Bold\]\[$Color5\]> \[$Color_OFF\]"	# violet, space
     export PS1=$PS1"\[$Bold\]\[$Color5\]>\[$Color1\]> \[$Color_OFF\]"	# violet, space
@@ -130,11 +130,6 @@ export LSCOLORS='ExGxFxdxCxDxDxBxBxExEx'
 #
 set -o vi
 
-export LD_LIBRARY_PATH=/usr/lib64/openmpi/lib
-export PATH=$PATH:/usr/lib64/openmpi/bin
-export PATH=$PATH:/smmProject/utilities
-
-
 export EDITOR=vim
 
 if [ -d ~/bin ]
@@ -142,7 +137,10 @@ if [ -d ~/bin ]
     PATH=$PATH:~/bin
     export PATH  
 fi
-PATH=/usr/local/bin:$PATH
+if [ -d /usr/local/bin ]
+  then
+    PATH=/usr/local/bin:$PATH
+fi
 
 
 #test -e ~/.dircolors && \

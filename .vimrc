@@ -161,4 +161,4 @@ let g:tex_conceal = ""
 
 autocmd FileType tex :NoMatchParen
 au FileType tex setlocal nocursorline
-set synmaxcol=120
+set synmaxcol=400
