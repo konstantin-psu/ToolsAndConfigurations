@@ -1,0 +1,11 @@
+#!/bin/bash
+
+#while true; do
+#  change=$(inotifywait -e close_write,moved_to,create .)
+#  change=${change#./ * }
+#  if [ "$change" = "2.tex" ]; then 
+#        echo "AAA"; 
+#  fi
+#done
+
+while true; do inotifywait $1 -e modify; run $1; done

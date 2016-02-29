@@ -1,0 +1,4 @@
+#!/bin/bash
+
+myip=`wget -q -O - checkip.dyndns.org|sed -e 's/.*Current IP Address: //' -e 's/<.*$//'`
+sendEmail -f zoom.ks@gmail.com -t zoom.ks@gmail.com -m $myip 
